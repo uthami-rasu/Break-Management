@@ -48,6 +48,40 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+
+doctype_js = {"BreakRecords" : "public/js/ClientScripts/weekly_break_summary.js"}
+
+fixtures = [
+    {
+        "doctype": "Client Script",
+        "filters": {
+            "module": "Break Management"
+        }
+    }, 
+    {
+        "doctype": "Role",
+        "filters": {
+          
+            "name":["in","Arffy Employee"]
+        }
+    }, 
+      {
+        "doctype": "User",
+    }, 
+    {
+        "doctype": "Role Profile",
+        "filters":{
+            "name":["in","Employee"]
+		}
+    }, 
+    {
+        "doctype":"Workspace", 
+        "filters":{
+            "name":["in","Monitor Breaks"]
+		}
+	}
+    
+]
 # Svg Icons
 # ------------------
 # include app icons in desk
@@ -144,6 +178,14 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+
+
+doc_events = {
+	"Weekly Break Summary": {
+		"on_update": "break_management.break_management.server_scripts.script.on_update",	
+		"before_insert": "break_management.break_management.server_scripts.script.before_insert",	
+	}
+}
 
 # Scheduled Tasks
 # ---------------

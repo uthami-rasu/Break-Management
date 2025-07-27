@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "WBS-.####",
+ "creation": "2025-07-26 22:40:45.026003",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yto6",
+  "work_entry_column",
+  "employee",
+  "week_start_date",
+  "total_break_time",
+  "column_break_jkez",
+  "employee_name",
+  "week_end_date",
+  "section_break_nhjh",
+  "break_timing_records",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yto6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_entry_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "week_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Week Start Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_break_time",
+   "fieldtype": "Data",
+   "label": "Summary of Break Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jkez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "week_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Week End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nhjh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "break_timing_records",
+   "fieldtype": "Table",
+   "label": "Break Timing Records",
+   "options": "BreakRecords"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Weekly Break Summary",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-27 18:19:58.918739",
+ "modified_by": "Administrator",
+ "module": "Break Management",
+ "name": "Weekly Break Summary",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

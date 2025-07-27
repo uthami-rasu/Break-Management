@@ -1,0 +1,35 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"PY-_AWbEOD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Monitor Breaks</span>\",\"col\":12}},{\"id\":\"CMjCgAwNiI\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"WBS Documents\",\"col\":4}}]",
+ "creation": "2025-07-27 17:57:54.596301",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "image-view",
+ "idx": 0,
+ "indicator_color": "light-blue",
+ "is_hidden": 0,
+ "label": "Monitor Breaks",
+ "links": [],
+ "modified": "2025-07-27 18:07:18.904242",
+ "modified_by": "Administrator",
+ "module": "Break Management",
+ "name": "Monitor Breaks",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Weekly Break Summary",
+   "label": "WBS Documents",
+   "quick_list_filter": "[[\"Weekly Break Summary\",\"name\",\"=\",null,false]]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Monitor Breaks"
+}
